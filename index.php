@@ -5,6 +5,7 @@
 list($usec, $sec) = explode(' ', microtime());
 $script_start = (float) $sec + (float) $usec;
 
+
 /**
 *@author Wellington cezar (programador jr) - wellington-cezar@hotmail.com
 */
