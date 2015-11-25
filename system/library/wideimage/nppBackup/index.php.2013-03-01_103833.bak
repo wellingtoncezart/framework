@@ -1,0 +1,8 @@
+<?php
+require( "WideImage.php");
+
+$img = WideImage::load("DSCF3239.jpg");
+$img = $img->resize(1000, 309, 'outside')->crop('50% - 50', '50% - 40', 1000, 309);
+$img = $img->saveToFile('minha_foto_menor.jpg');
+
+?>

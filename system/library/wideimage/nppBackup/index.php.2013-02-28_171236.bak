@@ -1,0 +1,10 @@
+<?php
+include ("WideImage");
+
+$img = new WideImage();
+$img->saveToFile('/path/to/image.png');
+
+$originalImage = WideImage::load('image.png');
+$newImage = $image->resize(200, 100)->crop(50, 50, 30, 20)->rotate(20);
+
+?>

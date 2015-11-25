@@ -1,0 +1,10 @@
+<?php
+require( "WideImage.php");
+
+$image = WideImage::load("DSCF3239.jpg");
+
+$nova_img = $image->resize(1000, 309);
+$nova_img->output('jpg', 90);
+
+$nova_img = $image->crop(1000, 309);
+?>

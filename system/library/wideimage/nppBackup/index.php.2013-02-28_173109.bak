@@ -1,0 +1,10 @@
+<?php
+require( "wideimage/WideImage.php");
+
+$image = WideImage::load("img/imagem1.png");
+
+$nova_img = $image->resize(400, 300);
+
+$nova_img->output('jpg', 90);
+- See more at: http://www.botecodigital.info/php/manipulando-imagens-com-wideimage/#sthash.0OwbFmvG.dpuf
+?>

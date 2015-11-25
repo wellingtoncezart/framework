@@ -1,0 +1,10 @@
+<?php
+include ("WideImage");
+
+$img = new WideImage();
+$img->saveToFile('DSCF3239.jpg');
+
+$originalImage = WideImage::load('teste.jpg');
+$newImage = $image->resize(200, 100)->crop(50, 50, 30, 20)->rotate(20);
+
+?>

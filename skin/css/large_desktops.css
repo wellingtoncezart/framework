@@ -1,0 +1,394 @@
+@media screen and (min-width: 1200px) {
+	.glyphicon{
+		top: 0;
+	}
+
+	/***************************************/
+	/** BEGIN HEADER **/
+	/***************************************/
+	.header{
+	    width: 100%;
+	    border-bottom: 0px #FFF solid;
+	    box-shadow: 0 0 6px 0px #333;
+	    background-size: 100%;
+	    position: relative;
+	    z-index: 1;
+	    background: url('../img/imagens/fundo_menu.jpg');
+    }
+    .header .top{
+    	display: table;
+    	width: 100%;
+    	border-bottom: 1px solid #121212;
+    }
+    .navbar-default {
+	    background-color: transparent;
+	    border-color: transparent;
+	    margin: 0;
+	}
+
+	.header .logo{
+	    width: 115px;
+	   margin: 13px;
+	   float: left; 
+
+	}
+
+	.header .logo img{
+		width: 100%;
+	}
+	.header .user{
+		float: right;
+	}
+
+	.header .user figure{
+	    width: 47px;
+	    margin: 0px auto;
+	    border-radius: 100%;
+	    overflow: hidden;
+	    background-color: #FFF;
+	    text-align: center;
+	}
+	.header .user figure img{
+		width: 100%;
+	}
+
+	.header .user .username{
+	    text-align: center;
+	    margin: 0;
+	    padding: 0;
+	    color: #FFF;
+	    font-size: 14px;
+	}
+
+	.header .user .btn-default {
+	    color: #333;
+	    background-color: transparent;
+	    border: 0;
+	}
+	.header .user .btn-default:active,
+	.header .user .btn-default:focus,
+	.header .user .btn-default:hover{
+		background-color: #171717;
+	}
+	
+	/***************************************/
+	/** END HEADER **/
+	/***************************************/
+	
+
+
+	/***************************************/
+	/** MENU **/
+	/***************************************/
+	.navbar-default .navbar-brand {
+	color: #FFF;
+    min-width: 126px;
+    display: block;
+    text-align: center;
+    height: auto;
+    transition:0.5s;
+	}
+
+
+
+	.navbar-default .navbar-brand span{
+    display: table;
+    font-size: 30px;
+    text-align: center;
+    margin: 6px auto;
+	}
+
+	.navbar-default .navbar-brand p{
+	    font-size: 15px;
+	}
+
+	.navbar-default .navbar-brand:focus, 
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand.active{
+	    color: #FFF;
+	    background-color: #121212;
+	}
+	.navbar-default .navbar-brand:focus span, 
+	.navbar-default .navbar-brand:hover span{
+		text-shadow: 0 0 10px #FFF;
+	}
+	.navbar-default .navbar-nav>li>a {
+    text-align: center;
+    color: #FFF;
+    min-width: 126px;
+    transition:0.5s;
+	}
+	.navbar-default .navbar-nav>li>a:focus, 
+	.navbar-default .navbar-nav>li>a:hover,
+	.navbar-default .navbar-nav>li>a.active{
+	    color: #FFF;
+	    background-color: #121212;
+	}
+	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	    color: #FFF;
+	    background-color: #121212;
+	}
+	.navbar-default .navbar-nav>li>a:focus span, 
+	.navbar-default .navbar-nav>li>a:hover span{
+		text-shadow: 0 0 10px #FFF;
+	}
+	.navbar-default .navbar-nav>li>a span{
+    display: table;
+    font-size: 30px;
+    text-align: center;
+    margin: 6px auto;
+	}
+	.navbar-default .navbar-nav>li>a p{
+    font-size: 15px;
+	}
+
+
+
+
+
+
+	.breadcrumb {
+	    padding: 8px 15px;
+	    margin-bottom: 0px;
+	    list-style: none;
+	    background-color: #f5f5f5;
+	    border-radius: 4px;
+	}
+	.page-header {
+    padding-bottom: 0px;
+    margin: 20px 0 15px;
+    border-bottom: 3px groove #3E8FD4;
+	}
+	.page-header h1{
+    color: #3C8FD6;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+	}
+	.panel-default>.panel-heading {
+	background-color: #3285B9;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#498db7+41,2a81b7+57 */
+	background: #498db7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #498db7 41%, #2a81b7 57%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(41%,#498db7), color-stop(57%,#2a81b7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #498db7 41%,#2a81b7 57%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #498db7 41%,#2a81b7 57%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #498db7 41%,#2a81b7 57%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(20,72,140,0.87) 41%,rgba(42, 92, 140, 0.85) 57%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#498db7', endColorstr='#2a81b7',GradientType=0 ); /* IE6-9 */
+
+    border-color: #09517D;
+    border-width: 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 1px 2px 0px #333;
+	}
+	.panel-default {
+    background-color: #FFF;
+    box-shadow: 0px 2px 5px 0px #333;
+    text-align: left;
+	}
+	.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin: 5px 0;
+    border: 1px solid #498DB7;
+    border-radius: 4px;
+    width: 100%;
+	}
+	
+	.inputFoto input[type=file]{
+		display: none;
+	}
+	.input-group-addon {
+	padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    color: #343434;
+    text-align: center;
+    background-color: #DEDEDE;
+    border: 0;
+    border-radius: 4px;
+	}
+	#container_login{
+		margin: 0;
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('../img/imagens/fundo_menu.jpg') 100%;
+	}
+	#container_login .box_login{
+	    position: absolute;
+	    top: 21%;
+	    left: 50%;
+	    right: 0;
+	    bottom: 0;
+	    display: table;
+	    width: 325px;
+	    margin-left: -161px;
+	    background: rgba(255, 255, 255, 0.2) url('../img/imagens/efeito.png');
+	    background-size: 100%;
+	    padding: 20px;
+	    border-radius: 23px;
+	    overflow: hidden;
+	    box-shadow: 0px 3px 15px -1px #FFFFFF inset;
+	}
+	#container_login .box_login header{
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+	#container_login .box_login header img{
+		width: 210px;
+	}
+	#container_login .box_login #form_login{
+		display: table;
+		width: 100%;
+	}
+
+	#container_login .box_login label{
+	    display: table;
+	    margin: 12px;
+	    padding: 0px;
+	}
+	#container_login .box_login label img{
+		float: left;
+		width: 20px;
+		margin: 7px;
+	}
+
+	#container_login .box_login label input{
+		float: right;
+		width: 270px;
+		border-radius: 0;
+	}
+
+	#container_login .box_login .btn_login{
+    background-color: #3B3B3B;
+    background-image: url('../img/imagens/efeito.png');
+    background-size: 100%;
+    box-shadow: 0 0 9px 7px rgb(37, 37, 37) inset;
+    margin: 0 10px;
+    border-radius: 8px;
+    border: 0;
+    width: 94%;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-size: 23px;
+    padding: 3px;
+    font-weight: bold;
+	}
+	#container_login .box_login .recupera{
+		float: right;
+		margin-right: 11px;
+		color: #FFF;
+		font-size: 12px;
+	}
+	#container_login .box_login .resposta{
+		border: 1px solid;
+		width: 94%;
+		margin: 10px;
+		padding: 6px;
+		text-align: center;
+		background: #5D666F;
+		color: #FFF;
+		font-size: 17px;
+		border-radius: 7px;
+	}
+	#container_login .box_login .resposta p{
+		margin: 0;
+	}
+
+	#container_login .box_login label.captcha{
+		display: none;
+	}
+
+	#container_login .box_login label.captcha input{
+		width: 96%;
+		margin: 6px; 
+	}
+
+	
+
+
+
+
+
+	.wrap-content{
+    position: relative;
+    width: 100%;
+
+
+	}
+
+
+
+
+
+	.k-tabstrip .k-tabstrip-items .k-link {
+	    padding: 6px 13px !important;
+	}
+	.k-tabstrip .k-content {
+	    background-color: #fff;
+	    color: #2e2e2e;
+	    background-color: transparent;
+	    border: 0!important;
+	}
+
+	.k-tabstrip .k-tabstrip-items {
+	    padding: 0;
+	    background: transparent url('../img/imagens/fundo_2.jpg');
+	    background-size: 100% auto;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	}
+
+	.k-tabstrip-top>.k-tabstrip-items>.k-item {
+	    border-bottom-width: 2px;
+	    /*background-color: rgba(52, 147, 241, 0.46);*/
+	    border-bottom-color: #083F86;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3487db+0,1e5799+99 */
+		background: #3487db; /* Old browsers */
+		background: -moz-linear-gradient(top,  #3487db 0%, #1e5799 99%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3487db), color-stop(99%,#1e5799)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #3487db 0%,#1e5799 99%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #3487db 0%,#1e5799 99%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #3487db 0%,#1e5799 99%); /* IE10+ */
+		background: linear-gradient(to bottom,  #3487db 0%,#1e5799 99%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3487db', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+
+	}
+
+	.k-tabstrip-top>.k-tabstrip-items>.k-item.k-state-active{
+	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,3487db+100 */
+		background: #1e5799; /* Old browsers */
+		background: -moz-linear-gradient(top,  #1e5799 0%, #3487db 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#3487db)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #1e5799 0%,#3487db 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #1e5799 0%,#3487db 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #1e5799 0%,#3487db 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #1e5799 0%,#3487db 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#3487db',GradientType=0 ); /* IE6-9 */
+		border-top-color: #FFF;
+	}
+
+	.k-tabstrip-items .k-state-default .k-link, .k-panelbar>li.k-state-default>.k-link {
+	    color: #FFFFFF!important;
+	    font-weight: bold;
+	    text-shadow: 1px 1px #000;
+	}
+
+	.k-tabstrip-items .k-state-active, .k-panelbar .k-tabstrip-items .k-state-active, .k-ie7 .k-tabstrip-items .k-state-active .k-loading {
+	    background-color: #fff;
+	    background-image: none;
+	    border-color: #FFFFFF;
+	}
+
+}
+

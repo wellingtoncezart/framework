@@ -1,0 +1,7 @@
+<?php
+include ("WideImage");
+
+$img = new WideImage();
+
+
+?>

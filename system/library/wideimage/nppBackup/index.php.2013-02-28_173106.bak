@@ -1,0 +1,17 @@
+<?php
+include ("WideImage");
+
+$img = new WideImage();
+
+$image = WideImage::load('image.png');
+
+
+$originalImage = WideImage::load('image.png');
+$newImage = $image->resize(200, 100)->crop(50, 50, 30, 20)->rotate(20);
+
+// and:
+$newImage = WideImage::load('image.png')->resize(200, 200)->rotate(20);
+
+// or just load, operate, save:
+WideImage::load('a.png')->resize(90, 70)->rotate(20)->saveToFile('b.jpg');
+?>

@@ -1,0 +1,10 @@
+<?php
+require( "WideImage.php");
+
+$image = WideImage::load("DSCF3239.jpg");
+
+$nova_img = $image->resize(400, 300);
+
+$nova_img->output('jpg', 90);
+- See more at: http://www.botecodigital.info/php/manipulando-imagens-com-wideimage/#sthash.0OwbFmvG.dpuf
+?>
