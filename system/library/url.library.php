@@ -1,24 +1,37 @@
 <?php
 /**
 * Classe que retorna a url atual
-* @access 
-* @author Wellington cézar
+* @author Wellington cézar - wellington-cezar@hotmail.com
 * @since 18/06/2014
-* @version 1.1
+* @version 2.0
 *
 */
-if(!defined('BASEPATH')) die('Acesso não permitido');
 class url
 {
 	private $url;
 	private $currentUrl;
-	public function __construct()
+	public function __construct($_url = array())
+	{	
+		$this->explodeUrl($_url);
+	}
+
+	public function explodeUrl($_url)
 	{
-		$server = 'http://'.$_SERVER['SERVER_NAME'].'/'; 
-		$endereco = $_SERVER ['REQUEST_URI'];
-		$endereco = rtrim($endereco,'/'); //remove as barras do final da string
-		$endereco = ltrim($endereco,'/'); //remove as barras do começo da string
-		$url = $server.$endereco.'/';//endereço completo
+		if(empty($_url))
+		{
+			$server = 'http://'.$_SERVER['SERVER_NAME'].'/'; 
+			$endereco = $_SERVER ['REQUEST_URI'];
+			$endereco = rtrim($endereco,'/'); //remove as barras do final da string
+			$endereco = ltrim($endereco,'/'); //remove as barras do começo da string
+			$url = $server.$endereco.'/';//endereço completo
+		}else
+		{
+			$_url = rtrim($_url,'/'); //remove as barras do final da string
+			$_url = ltrim($_url,'/'); //remove as barras do começo da string
+			$url = $_url.'/';//endereço completo
+		}
+
+
 		$this->currentUrl = $url;
 		$url = str_replace(URL, '', $url);//remove o endereço original e fica apenas o caminho
 		$url = explode('/',$url);
@@ -31,6 +44,10 @@ class url
 		unset($url);
 		unset($newArr);
 	}
+
+
+
+
 
 	public function getUrl()
 	{

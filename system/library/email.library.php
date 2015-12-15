@@ -24,7 +24,8 @@ class email
 
 	public function para($para)
 	{
-		$this->para = $para;
+		if($para != '')
+			array_push($this->para, trim($para));
 	}
 
 	public function de($de)
@@ -54,12 +55,14 @@ class email
 
 	public function cc($cc)
 	{
-		$this->cc = $cc;
+		if($cc != '')
+			array_push($this->cc, trim($cc));
 	}
 
 	public function bcc($bcc)
 	{
-		$this->bcc = $bcc;
+		if($bcc != '')
+			array_push($this->bcc, trim($bcc));
 	}
 
 	public function getError()
@@ -96,10 +99,10 @@ class email
 		 if(file_exists($this->anexo["tmp_name"]) and !empty($this->anexo))
 		 {
 		 	if(	$this->de != '' 
-				&& $this->para != ''  
+				&& !empty($this->para)  
 				&& $this->mensagem != '')
 			{
-				$this->para 		= trim($this->para);
+				$this->para 		= implode(', ',$this->para);
 				$this->de 		= trim($this->de);
 
 				$arquivo = $this->anexo;
@@ -134,14 +137,18 @@ class email
 
 				$this->headers .= "From: $nome <".$this->de.">\r\n";
 
-				if($this->cc != '')
+				if(!empty($this->cc))
 				{
-					$this->headers .= "Cc: ".trim($this->cc)."\r\n";
+					foreach ($this->cc as $cc) {
+						$this->headers .= "Cc: ".trim($cc)."\r\n";
+					}
 				}
 				
-				if($this->bcc != '')
+				if(!empty($this->bcc))
 				{
-					$this->headers .= "Bcc: ".trim($this->bcc)."\r\n";
+					foreach ($this->bcc as $bcc) {
+						$this->headers .= "Bcc: ".trim($bcc)."\r\n";
+					}
 				}
 
 				if($this->returnPath != '')
